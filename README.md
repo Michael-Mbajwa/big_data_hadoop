@@ -1,2 +1,2 @@
 # hadoop
-Big data analytics using hadoop mapreduce.
+Big data analytics using Apache hadoop framework.
