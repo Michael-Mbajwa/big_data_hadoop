@@ -4,6 +4,14 @@ import scala.util.matching.Regex
 
 
 object SparkWordCount {
+  /*
+A SparkWordCount.scala object, that extracts (i) words (i.e., sequences of the
+letters “a-z” including dashes “-” and under-dashes “ ”) and (ii) numbers (i.e., sequences of the
+digits “0-9” separated by at most one “.”) into two separate RDD objects.
+
+It goes further to find the (i) top-1,000 most frequent words and the (ii) top-1,000 most
+frequent numbers contained among provided file.
+  */
   def main(args: Array[String]) {
     if (args.length < 2) {
       System.err.println("Correct arguments: <input-directory> <output-directory>")
